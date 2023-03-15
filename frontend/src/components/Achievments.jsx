@@ -40,7 +40,10 @@ const Achievments = () => {
       >
         <h2 className="text-white font-semibold">Achievment</h2>
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-3 px-[50px] lg:grid-cols-3 gap-3">
+      <div
+        className="grid grid-cols-3 md:grid-cols-3 px-[50px] lg:grid-cols-3 gap-3"
+        cd
+      >
         {images.map((image) => (
           <div
             key={image.id}
