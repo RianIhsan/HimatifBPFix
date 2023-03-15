@@ -40,23 +40,26 @@ const Achievments = () => {
       >
         <h2 className="text-white font-semibold">Achievment</h2>
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-3 px-[50px] lg:grid-cols-3 gap-3">
+      <div
+        className="grid grid-cols-3 md:grid-cols-3 px-[50px] lg:grid-cols-3 gap-3"
+        cd
+      >
         {images.map((image) => (
           <div
             key={image.id}
-            className="col-span-3 md:col-span-1 flex justify-center items-end "
+            className="col-span-3 md:col-span-1 flex justify-center items-end hover:scale-75 ease-out duration-300"
           >
             <img
-              className="aspect-[4/3] object-cover rounded-lg shadow-md cursor-pointer w-[50vw]"
+              className="aspect-[4/3] object-cover shadow-md cursor-pointer w-[50vw]"
               src={image.src}
               alt={image.src}
               onClick={() => openModal(image)}
-              //data-aos="zoom-in"
-              //data-aos-duration="1000"
-              //data-aos-easing="ease-in"
-              //data-aos-once="true"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in"
+              data-aos-once="true"
             />
-            <p className="z-100 absolute bg-black opacity-60 text-white p-2 mb-2 rounded-lg">
+            <p className="z-100 absolute bg-black bg-opacity-25 text-[25px] text-white p-2 mb-2 rounded-lg">
               {image.caption}
             </p>
           </div>
