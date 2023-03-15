@@ -29,16 +29,21 @@ const Footer = () => {
               Jl. Soekarno Hatta No.530, Sekejati, Kec. Buahbatu, Kota Bandung,
               Jawa Barat 40286
             </h4>
-            <Link to="" className="underline">
-
-
+            <a
+              href="https://goo.gl/maps/dzhFcgdFmx8Vmqnb7"
+              target="_blank"
+              className="underline"
+            >
               View Map
-            </Link>
+            </a>
           </div>
 
           <div className="flex w-[140px] md:w-[170px] mt-[25px] md:mt-[55px] justify-center items-center gap-6">
             <div>
-              <Link to="">
+              <a
+                href="mailto:teknikinformatikauninus@gmail.com?subjek=Subjek Email&body=Isi Pesan"
+                target="_blank"
+              >
                 <svg
                   width="40px"
                   height="40px"
@@ -80,11 +85,14 @@ const Footer = () => {
                     fill="#4285F4"
                   />
                 </svg>
-              </Link>
+              </a>
             </div>
 
             <div>
-              <Link to="">
+              <a
+                href="https://www.instagram.com/himatifuninus/"
+                target="_blank"
+              >
                 <svg
                   width="27px"
                   height="27px"
@@ -127,7 +135,7 @@ const Footer = () => {
                     fill="url(#1)"
                   />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
