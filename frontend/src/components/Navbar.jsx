@@ -187,7 +187,7 @@ export default function Navbar() {
                   >
                     <div className="flex flex-col">
                       <Link
-                        to="VisiMisi"
+                        to="/VisiMisi"
                         className="p-1 hover:bg-[#020181] hover:rounded-lg hover:text-white"
                       >
                         Vision and Mision
