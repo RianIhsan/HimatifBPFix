@@ -40,12 +40,12 @@ const Berita = () => {
       <div className="hidden md:block">
         <div className="flex justify-center">
           <div
-            className="flex border-2 border-[#020181] lg:w-[80vw] pl-[50px] h-[540px] md:w-[760px] my-[40px] bg-[#020181] rounded-[12px] flex-col"
+            className="flex border-2 border-[#020181]  pl-[50px] h-[547px] lg:h-[600px] md:w-[760px] lg:w-[83vw] my-[40px] bg-[#020181] rounded-[12px] flex-col"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-once="true"
           >
-            <h2 className="text-[32px] font-[400px] m-[26px] pl-[10px] text-white py-2">
+            <h2 className="text-[32px] font-[400px] lg:text-[35px] m-[26px] pl-[10px] text-white py-2">
               News
             </h2>
             {/* Carousel */}
@@ -53,10 +53,10 @@ const Berita = () => {
               <div>
                 <Carousel responsive={responsive} className="mx-[5vw]">
                   {/* slide 1 */}
-                  <div>
+                  <div className="w-[264px] hover:opacity-80 duration-300">
                     <Link
                       to="../Society"
-                      className="flex cursor-pointer flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]"
+                      className="flex flex-col w-[261px] lg:w-[281px] h-[378px] lg:h-[412px] font-semibold bg-white rounded-[11px]"
                     >
                       <div className="w-auto h-[220px] rounded-t-[9px] text-center">
                         <img
@@ -65,26 +65,27 @@ const Berita = () => {
                           className="rounded-t-md h-full"
                         />
                       </div>
-                      <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] h-[126px] w-[200px] ">
-                        <h1 className="text-[25px]">Figma</h1>
+                      <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
+                        <h1 className="text-[25px] lg:text-[28px]">Figma</h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
-                          <span className="text-[12px] text-red-500">
+                          <span className="text-[12px] lg:text-[13px] text-red-500">
                             5 hari yang lalu
                           </span>
                         </div>
-                        <p className="text-[13px]">
+                        <p className="text-[13px] lg:text-[14px]">
                           Figma menjadi website desain terbaik bagi para
                           desainer web dan mobile
                         </p>
                       </div>
                     </Link>
                   </div>
+
                   {/* slide 2 */}
-                  <div>
+                  <div className="w-[264px] hover:opacity-80 duration-300">
                     <Link
                       to="../Bhs"
-                      className="flex flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]"
+                      className="flex flex-col w-[261px] lg:w-[281px] h-[378px] lg:h-[412px] font-semibold bg-white rounded-[11px]"
                     >
                       <div className="w-auto h-[220px] rounded-t-[9px] text-center">
                         <img
@@ -93,23 +94,28 @@ const Berita = () => {
                           className="rounded-t-md h-full"
                         />
                       </div>
-                      <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] h-[126px] w-[200px] ">
-                        <h1 className="text-[25px]">Resesi 2023</h1>
+                      <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
+                        <h1 className="text-[25px] lg:text-[28px]">
+                          Resesi 2023
+                        </h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
-                          <span className="text-[12px] text-red-500">
+                          <span className="text-[12px] lg:text-[13px] text-red-500">
                             7 hari yang lalu
                           </span>
                         </div>
+                        <p className="text-[13px] lg:text-[14px]">
+                          Menginjak awal tahun 2023 dengan resesi global
+                        </p>
                       </div>
                     </Link>
                   </div>
 
                   {/* slide 3 */}
-                  <div>
+                  <div className="w-[264px] hover:opacity-80 duration-300">
                     <Link
                       to="../Duel"
-                      className="flex flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]"
+                      className="flex flex-col w-[261px] lg:w-[281px] h-[378px] lg:h-[412px] font-semibold bg-white rounded-[11px]"
                     >
                       <div className="w-auto h-[220px] rounded-t-[9px] text-center">
                         <img
@@ -118,15 +124,17 @@ const Berita = () => {
                           className="rounded-t-md w-full h-full"
                         />
                       </div>
-                      <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] h-[126px] w-[200px] ">
-                        <h1 className="text-[25px]">Resesi 2023</h1>
+                      <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
+                        <h1 className="text-[25px] lg:text-[28px]">
+                          Resesi 2023
+                        </h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
-                          <span className="text-[12px] text-red-500">
-                            7 hari yang lalu
+                          <span className="text-[12px] lg:text-[13px] text-red-500">
+                            10 hari yang lalu
                           </span>
                         </div>
-                        <p className="text-[13px]">
+                        <p className="text-[13px] lg:text-[14px]">
                           Menginjak awal tahun 2023 dengan resesi global
                         </p>
                       </div>
@@ -134,23 +142,58 @@ const Berita = () => {
                   </div>
 
                   {/* slide 4 */}
-                  <div>
+                  <div className="w-[264px] hover:opacity-80 duration-300">
                     <Link
                       to="../OpenAi"
-                      className="flex flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]"
+                      className="flex flex-col w-[261px] lg:w-[281px] h-[378px] lg:h-[412px] font-semibold bg-white rounded-[11px]"
                     >
-                      <div className="w-auto h-[200px] bg-black rounded-t-[9px] text-center"></div>
-                      <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] h-[126px] w-[200px] ">
-                        <h1 className="text-[25px]">Figma</h1>
+                      <div className="w-auto h-[220px] rounded-t-[9px] text-center">
+                        <img
+                          src={iphone}
+                          alt=""
+                          className="rounded-t-md w-full h-full"
+                        />
+                      </div>
+                      <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
+                        <h1 className="text-[25px] lg:text-[28px]">Open AI</h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
-                          <span className="text-[12px] text-red-500">
-                            5 hari yang lalu
+                          <span className="text-[12px] lg:text-[13px] text-red-500">
+                            14 hari yang lalu
                           </span>
                         </div>
-                        <p className="text-[13px]">
-                          Figma menjadi website desain terbaik bagi para
-                          desainer web dan mobile
+                        <p className="text-[13px] lg:text-[14px]">
+                          Open Ai menjadi suatu hal yang melejit belakangan ini
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+
+                  {/* slide 5 */}
+                  <div className="w-[264px] hover:opacity-80 duration-300">
+                    <Link
+                      to=""
+                      className="flex flex-col w-[261px] lg:w-[281px] h-[378px] lg:h-[412px] font-semibold bg-white rounded-[11px]"
+                    >
+                      <div className="w-auto h-[220px] rounded-t-[9px] text-center">
+                        <img
+                          src={iphone}
+                          alt=""
+                          className="rounded-t-md w-full h-full"
+                        />
+                      </div>
+                      <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
+                        <h1 className="text-[25px] lg:text-[28px]">
+                          Berita Terkini
+                        </h1>
+                        <div className="flex items-center gap-2 animate-pulse">
+                          <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
+                          <span className="text-[12px] lg:text-[13px] text-red-500">
+                            21 hari yang lalu
+                          </span>
+                        </div>
+                        <p className="text-[13px] lg:text-[14px]">
+                          Berita yang sedang hangat dimanapun itu berada
                         </p>
                       </div>
                     </Link>
