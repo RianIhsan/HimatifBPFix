@@ -47,7 +47,7 @@ const Achievments = () => {
         {images.map((image) => (
           <div
             key={image.id}
-            className="col-span-3 md:col-span-1 flex justify-center items-end hover:scale-75 ease-out duration-300"
+            className="col-span-3 md:col-span-1 flex justify-center items-end hover:scale-75 ease-in duration-300"
           >
             <img
               className="aspect-[4/3] object-cover shadow-md cursor-pointer w-[50vw]"
