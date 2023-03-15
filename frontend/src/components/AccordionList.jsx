@@ -15,7 +15,12 @@ function AccordionList({
   };
 
   return (
-    <div className="border border-gray-300 rounded-lg w-[80vw] md:w-[70vw] lg:w-[70vw] xl:w-[70vw] 2xl:w-[70vw]">
+    <div
+      className="border border-gray-300 rounded-lg w-[80vw] md:w-[70vw] lg:w-[70vw] xl:w-[70vw] 2xl:w-[70vw]"
+      data-aos="zoom-in"
+      data-aos-duration="900"
+      data-aos-once="true"
+    >
       <div
         className="flex justify-between items-center py-4 cursor-pointer select-none"
         onClick={toggleAccordion}
