@@ -19,22 +19,6 @@ const Achievments = () => {
       src: "https://source.unsplash.com/500x500?cars",
       caption: "ini adalah caption",
     },
-
-    {
-      id: 4,
-      src: "https://source.unsplash.com/500x500?bikes",
-      caption: "ini adalah caption",
-    },
-    {
-      id: 5,
-      src: "https://source.unsplash.com/500x500?future",
-      caption: "ini adalah caption",
-    },
-    {
-      id: 6,
-      src: "https://source.unsplash.com/500x500?internet",
-      caption: "ini adalah caption",
-    },
   ]);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -49,7 +33,7 @@ const Achievments = () => {
   return (
     <div className="container mx-auto px-[59px]">
       <div
-        className="bg-[#020181] w-[130px] h-[50px] mb-10 rounded-md flex justify-center items-center max-[500px]:w-[100px] ml-6"
+        className="bg-[#020181] w-[130px] h-[50px] mb-10 rounded-md flex justify-center items-center max-[500px]:w-[100px] ml-[-39px] sm:ml-[-13px] md:ml-[-13px] lg:ml-0.5 xl:ml-7 "
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-once="true"
@@ -60,17 +44,17 @@ const Achievments = () => {
         {images.map((image) => (
           <div
             key={image.id}
-            className="col-span-3 md:col-span-1 flex justify-center items-end"
+            className="col-span-3 md:col-span-1 flex justify-center items-end "
           >
             <img
               className="aspect-[4/3] object-cover rounded-lg shadow-md cursor-pointer w-[50vw]"
               src={image.src}
               alt={image.src}
               onClick={() => openModal(image)}
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in"
-              data-aos-once="true"
+              //data-aos="zoom-in"
+              //data-aos-duration="1000"
+              //data-aos-easing="ease-in"
+              //data-aos-once="true"
             />
             <p className="z-100 absolute bg-black opacity-60 text-white p-2 mb-2 rounded-lg">
               {image.caption}
