@@ -1,28 +1,33 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
+import { supabase } from "../../supabase";
 
 const Icc = () => {
   const [nama, setNama] = useState("");
   const [kelas, setKelas] = useState("");
-  const [whatsapp, setWhatsapp] = useState("");
+  const [wa, setWhatsapp] = useState("");
 
   const navigate = useNavigate();
 
-  const savePeserta = async (e) => {
+  const savePesertaIcc = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/peserta", {
-        nama,
-        kelas,
-        whatsapp,
-      });
-      navigate("/");
+      const { error } = await supabase.from("user").insert([
+        {
+          nama: nama,
+          kelas: kelas,
+          wa: wa,
+        },
+      ]);
+      if (error) throw error;
+
+      navigate("/Icc/PesertaI");
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
-  };
+  }
+
   return (
     <div className="container mx-auto my-24">
       <Navbar />
@@ -36,7 +41,7 @@ const Icc = () => {
             <h1 className="text-center pb-2 text-2xl font-semibold">
               Registrasi
             </h1>
-            <form onSubmit={savePeserta}>
+            <form onSubmit={savePesertaIcc}>
               <label htmlFor="" className="text-lg md:text-xl">
                 Nama :
               </label>
@@ -66,7 +71,7 @@ const Icc = () => {
               </label>
               <div>
                 <input
-                  value={whatsapp}
+                  value={wa}
                   onChange={(e) => setWhatsapp(e.target.value)}
                   type="text"
                   className="bg-slate-200 rounded-lg p-1"

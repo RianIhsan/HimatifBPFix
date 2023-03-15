@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-
-const PesertaI = () => {
-  const [peserta_icc, setPesertaIcc] = useState([]);
-
-  useEffect(() => {
-    getPeserta_icc();
-  }, []);
-
-  const getPeserta_icc = async () => {
-    const response = await axios.get("http://localhost:5000/peserta");
-    setPesertaIcc(response.data);
-  };
+import { supabase } from "../../supabase";
+  const PesertaI = () => {
+    const [peserta_icc, setPesertaIcc] = useState([]);
+  
+    const getPeserta_icc = async () => {
+      try {
+        const res = await supabase.from("user").select();
+        setPesertaIcc(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+  
+    useEffect(() => {
+      getPeserta_icc();
+    }, []);
+  
 
   return (
     <div>
@@ -39,7 +43,7 @@ const PesertaI = () => {
                     <td className="py-3 px-2 lg:px-9">{index + 1}</td>
                     <td className="py-3 px-2 lg:px-9">{peserta.nama}</td>
                     <td className="py-3 px-2 lg:px-9">{peserta.kelas}</td>
-                    <td className="py-3 px-2 lg:px-9">{peserta.whatsapp}</td>
+                    <td className="py-3 px-2 lg:px-9">{peserta.wa}</td>
                   </tr>
                 ))}
               </tbody>
