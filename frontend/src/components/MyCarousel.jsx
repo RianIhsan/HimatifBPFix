@@ -53,8 +53,11 @@ const Berita = () => {
               <div>
                 <Carousel responsive={responsive} className="mx-[5vw]">
                   {/* slide 1 */}
-                  <Link to="../Society">
-                    <div className="flex cursor-pointer flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]">
+                  <div>
+                    <Link
+                      to="../Society"
+                      className="flex cursor-pointer flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]"
+                    >
                       <div className="w-auto h-[220px] rounded-t-[9px] text-center">
                         <img
                           src={figma}
@@ -75,11 +78,14 @@ const Berita = () => {
                           desainer web dan mobile
                         </p>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
                   {/* slide 2 */}
-                  <Link to="../Bhs">
-                    <div className="flex flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]">
+                  <div>
+                    <Link
+                      to="../Bhs"
+                      className="flex flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]"
+                    >
                       <div className="w-auto h-[220px] rounded-t-[9px] text-center">
                         <img
                           src={resesi}
@@ -96,12 +102,15 @@ const Berita = () => {
                           </span>
                         </div>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
 
                   {/* slide 3 */}
-                  <Link to="../Duel">
-                    <div className="flex flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]">
+                  <div>
+                    <Link
+                      to="../Duel"
+                      className="flex flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]"
+                    >
                       <div className="w-auto h-[220px] rounded-t-[9px] text-center">
                         <img
                           src={iphone}
@@ -121,12 +130,15 @@ const Berita = () => {
                           Menginjak awal tahun 2023 dengan resesi global
                         </p>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
 
                   {/* slide 4 */}
-                  <Link to="../OpenAi">
-                    <div className="flex flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]">
+                  <div>
+                    <Link
+                      to="../OpenAi"
+                      className="flex flex-col w-[261px] h-[378px] font-semibold bg-white rounded-[11px]"
+                    >
                       <div className="w-auto h-[200px] bg-black rounded-t-[9px] text-center"></div>
                       <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] h-[126px] w-[200px] ">
                         <h1 className="text-[25px]">Figma</h1>
@@ -141,8 +153,8 @@ const Berita = () => {
                           desainer web dan mobile
                         </p>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
                 </Carousel>
               </div>
             </div>
