@@ -6,7 +6,12 @@ function VisiMisi() {
   return (
     <div>
       <Navbar />
-      <div className="grid place-items-center mt-[7rem]">
+      <div
+        className="grid place-items-center mt-[7rem]"
+        data-aos="fade-down"
+        data-aos-duration="500"
+        data-aos-once="true"
+      >
         <h1 className="text-[#020181] font-bold text-[1.5rem]">HIMATIF</h1>
         <h2 className="text-[#00D179]">Universitas Islam Nusantara</h2>
       </div>
