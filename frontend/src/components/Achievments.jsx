@@ -50,7 +50,7 @@ const Achievments = () => {
             className="col-span-3 md:col-span-1 flex justify-center items-end hover:scale-75 ease-in duration-300"
           >
             <img
-              className="aspect-[4/3] object-cover shadow-md cursor-pointer w-[50vw]"
+              className="aspect-[4/3] object-cover shadow-md cursor-pointer w-[100vw]"
               src={image.src}
               alt={image.src}
               onClick={() => openModal(image)}
@@ -59,7 +59,7 @@ const Achievments = () => {
               data-aos-easing="ease-in"
               data-aos-once="true"
             />
-            <p className="z-100 absolute bg-black bg-opacity-25 text-[25px] text-white p-2 mb-2 rounded-lg">
+            <p className="z-100 absolute bg-black bg-opacity-25 text-[10px] sm:text-[14px] md:text-[16px] text-white p-2 mb-2 rounded-lg">
               {image.caption}
             </p>
           </div>
