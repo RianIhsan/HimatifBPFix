@@ -10,22 +10,22 @@ const Cover = () => {
 
   return (
     <div
-      className="container mx-auto rounded-lg bg-center bg-no-repeat mt-12 h-[90vh]"
+      className="container mx-auto rounded-lg bg-center bg-no-repeat mt-12 h-[50vh] md:h-[90vh]"
       style={{ backgroundImage: `url(${image})` }}
       data-aos="fade-up"
       data-aos-duration="1500"
       data-aos-once="true"
     >
       {/* MOBILE  */}
-      <div className="h-[350px] bg-cover flex justify-center items-center bg-teal-300 md:hidden">
+      <div className="h-[350px] bg-cover flex justify-center items-center md:hidden">
         <div className="">
-          <h1 className="text-center text-xl text-[#020181] font-bold py-2">
+          <h1 className="text-center text-lg text-[#020181] font-bold py-2">
             HIMATIF INFORMATION WEBSITE
           </h1>
 
           <h6 className="text-center px-4 text-xs">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ea
-            impedit culpa? Delectus, et dicta!
+            Himpunan Mahasiswa Teknik Informatika Fakultas Teknik Universitas
+            Islam Nusantara
           </h6>
         </div>
       </div>
