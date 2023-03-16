@@ -210,7 +210,7 @@ const Berita = () => {
       <div className="md:hidden max-[200px]:hidden">
         <div className="flex justify-center">
           <div
-            className="flex border-2 border-[#020181] w-[252px] sm:w-[385px] h-[1040px] sm:h-[1348px] my-[60px] bg-[#020181] rounded-[12px] flex-col"
+            className="flex border-2 border-[#020181] w-[252px] sm:w-[385px] h-[1050px] sm:h-[1355px] my-[60px] bg-[#020181] rounded-[12px] flex-col"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-once="true"
@@ -220,88 +220,92 @@ const Berita = () => {
             </h2>
             <div className="pl-[20px] sm:pl-[66px] pt-[10px]">
               {/* Slide 1 */}
-              <Link to="../Society">
-                <div className="group w-[19vw]">
-                  <div className="flex flex-col w-[210px] h-[260px] sm:w-[261px] sm:h-[358px] font-semibold bg-white rounded-[0.64rem] group-hover:cursor-pointer duration-100 group-hover:bg-slate-200">
-                    <div className="w-auto h-[200px] rounded-t-[0.64rem] text-center">
-                      <img
-                        src={figma}
-                        alt=""
-                        className="rounded-t-[0.58rem] h-full group-hover:opacity-90"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-evenly ml-[20px] h-[126px] w-[200px]">
-                      <h1 className="text-[16px] sm:text-[25px]">Figma</h1>
-                      <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
-                        <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
-                        <span className="text-[9px] sm:text-[12px] text-red-500">
-                          5 hari yang lalu
-                        </span>
-                      </div>
-                      <p className="text-[10px] sm:text-[13px] w-[180px]">
-                        Figma menjadi website desain terbaik bagi para desainer
-                        web dan mobile
-                      </p>
-                    </div>
+              <div className="w-[212px] sm:w-[263px] hover:opacity-80 duration-300">
+                <Link
+                  to="../Society"
+                  className="flex flex-col w-[210px] h-[270px] sm:w-[261px] sm:h-[358px] font-semibold bg-white rounded-[0.64rem]"
+                >
+                  <div className="w-auto h-[200px] rounded-t-[0.64rem] text-center">
+                    <img
+                      src={figma}
+                      alt=""
+                      className="rounded-t-[0.58rem] h-full group-hover:opacity-90"
+                    />
                   </div>
-                </div>
-              </Link>
+                  <div className="flex flex-col justify-evenly ml-[20px] h-[126px] w-[200px]">
+                    <h1 className="text-[16px] sm:text-[25px]">Figma</h1>
+                    <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
+                      <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
+                      <span className="text-[9px] sm:text-[12px] text-red-500">
+                        5 hari yang lalu
+                      </span>
+                    </div>
+                    <p className="text-[10px] sm:text-[13px] w-[180px]">
+                      Figma menjadi website desain terbaik bagi para desainer
+                      web dan mobile
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
               {/* Slide 2 */}
-              <Link to="../Bhs">
-                <div className="group w-[19vw] mt-[30px]">
-                  <div className="flex flex-col w-[210px] h-[260px] sm:w-[261px] sm:h-[358px] font-semibold bg-white rounded-[0.64rem] group-hover:cursor-pointer duration-100 group-hover:bg-slate-200">
-                    <div className="w-auto h-[200px] rounded-t-[0.64rem] text-center">
-                      <img
-                        src={resesi}
-                        alt=""
-                        className="rounded-t-[0.58rem] h-full group-hover:opacity-90"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-evenly ml-[20px] h-[126px] w-[200px]">
-                      <h1 className="text-[16px] sm:text-[25px]">
-                        Resesi 2023
-                      </h1>
-                      <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
-                        <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
-                        <span className="text-[9px] sm:text-[12px] text-red-500">
-                          7 hari yang lalu
-                        </span>
-                      </div>
-                      <p className="text-[10px] sm:text-[13px] w-[180px]">
-                        Menginjak awal tahun 2023 dengan resesi global
-                      </p>
-                    </div>
+
+              <div className="w-[212px] sm:w-[263px] mt-[30px] hover:opacity-80 duration-300">
+                <Link
+                  to="../Bhs"
+                  className="flex flex-col w-[210px] h-[270px] sm:w-[261px] sm:h-[358px] font-semibold bg-white rounded-[0.64rem]"
+                >
+                  <div className="w-auto h-[200px] rounded-t-[0.64rem] text-center">
+                    <img
+                      src={resesi}
+                      alt=""
+                      className="rounded-t-[0.58rem] h-full group-hover:opacity-90"
+                    />
                   </div>
-                </div>
-              </Link>
+                  <div className="flex flex-col justify-evenly ml-[20px] h-[126px] w-[200px]">
+                    <h1 className="text-[16px] sm:text-[25px]">Resesi 2023</h1>
+                    <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
+                      <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
+                      <span className="text-[9px] sm:text-[12px] text-red-500">
+                        7 hari yang lalu
+                      </span>
+                    </div>
+                    <p className="text-[10px] sm:text-[13px] w-[180px]">
+                      Menginjak awal tahun 2023 dengan resesi global
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
               {/* Slide 3 */}
-              <Link to="../Duel">
-                <div className="group w-[19vw] mt-[30px]">
-                  <div className="flex flex-col w-[210px] h-[340px] sm:w-[261px] sm:h-[427px] font-semibold bg-white rounded-[0.64rem] group-hover:cursor-pointer duration-100 group-hover:bg-slate-200">
-                    <div className="w-auto h-[268px] rounded-t-[0.64rem] text-center">
-                      <img
-                        src={iphone}
-                        alt=""
-                        className="rounded-t-[0.58rem] h-full group-hover:opacity-90"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-evenly ml-[20px] h-[156px] w-[200px]">
-                      <h1 className="text-[16px] sm:text-[18px] w-[150px]">
-                        Apple buka pabrik di China
-                      </h1>
-                      <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
-                        <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
-                        <span className="text-[9px] sm:text-[12px] text-red-500">
-                          14 hari yang lalu
-                        </span>
-                      </div>
-                      <p className="text-[10px] sm:text-[13px] w-[180px]">
-                        Strategi Apple buka pabrik di China menjadi sorotan
-                      </p>
-                    </div>
+              <div className="w-[212px] sm:w-[263px] mt-[30px] hover:opacity-80 duration-300">
+                <Link
+                  to="../Duel"
+                  className="flex flex-col w-[210px] h-[332px] sm:w-[261px] sm:h-[429px] font-semibold bg-white rounded-[0.64rem]"
+                >
+                  <div className="w-auto h-[268px] rounded-t-[0.64rem] text-center">
+                    <img
+                      src={iphone}
+                      alt=""
+                      className="rounded-t-[0.58rem] h-full group-hover:opacity-90"
+                    />
                   </div>
-                </div>
-              </Link>
+                  <div className="flex flex-col justify-evenly ml-[20px] h-[156px] w-[200px]">
+                    <h1 className="text-[16px] sm:text-[18px] w-[150px]">
+                      Apple buka pabrik di China
+                    </h1>
+                    <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
+                      <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
+                      <span className="text-[9px] sm:text-[12px] text-red-500">
+                        14 hari yang lalu
+                      </span>
+                    </div>
+                    <p className="text-[10px] sm:text-[13px] w-[180px]">
+                      Strategi Apple buka pabrik di China menjadi sorotan
+                    </p>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
