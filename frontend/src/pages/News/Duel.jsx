@@ -20,18 +20,22 @@ const Duel = () => {
             yang dikembangkan oleh Google ini bernama "Apprentice Bard".
             Fungsinya sama dengan chatGPT yang mampu memberikan respon pada
             pengguna dalam bentuk teks. Selain fitur chatbot, Google juga
-            mengembangkan "Universal Speech Model" yang mendukung 1000 bahasa.{" "}
-            <br /> <br />
+            mengembangkan "Universal Speech Model" yang mendukung 1000 bahasa.
+          </p>
+          <p>
             "Apprentice Bard" ini digadang-gadang memiliki kemampuan menyimpan
             informasi dari peristiwa masa lalu hingga terkini dalam jangka waktu
             lama. Berbeda dari pesaingnya yang hanya bisa menyimpan informasi
             pengetahuan sampai 2021. Sehingga, chatGPT akan ketinggalan selama 2
-            tahun. <br /> <br /> Dalam tahap uji coba, chatbot milik Google juga
-            akan menampilkan jawaban-jawaban yang relevan serta menampilkan
-            pertanyaan lanjutan yang bisa diakses oleh pengguna. Untuk saat ini,
-            chatbot milik Google masih dalam pengembangan. Namun, dengan
-            reputasi Google, dapat dipastikan Google akan menciptakan
-            fitur-fitur chatbot terbaik dan unggul dari pesaingnya.
+            tahun.
+          </p>
+          <p>
+            Dalam tahap uji coba, chatbot milik Google juga akan menampilkan
+            jawaban-jawaban yang relevan serta menampilkan pertanyaan lanjutan
+            yang bisa diakses oleh pengguna. Untuk saat ini, chatbot milik
+            Google masih dalam pengembangan. Namun, dengan reputasi Google,
+            dapat dipastikan Google akan menciptakan fitur-fitur chatbot terbaik
+            dan unggul dari pesaingnya.
           </p>
         </div>
       </div>
