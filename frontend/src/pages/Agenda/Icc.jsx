@@ -9,6 +9,7 @@ import withReactContent from "sweetalert2-react-content";
 import Input from "../../components/Input";
 import Select from "../../components/Select";
 import { supabase } from "../../supabase";
+import Archie from "../../assets/archie.png";
 const Icc = () => {
   const [nama, setNama] = useState("");
   const [kelas, setKelas] = useState("");
@@ -163,12 +164,8 @@ const Icc = () => {
                 Camp
               </h1>
               <div className="flex justify-center items-end">
-                <img
-                  src="https://source.unsplash.com/350x350?man"
-                  alt=""
-                  className="rounded-lg"
-                />
-                <p className="z-50 absolute bg-black bg-opacity-40 text-white p-2 mb-2 rounded-lg max-w-xs">
+                <img src={Archie} alt="" className="w-[450px]" />
+                <p className="z-50 absolute bg-black bg-opacity-60 text-white p-2 mb-2 rounded-lg max-w-xs">
                   ICC adalah program bootcamp dari himatif untuk mengasah
                   kemampuan skill coding mahasiswa.
                 </p>
