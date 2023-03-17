@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
-import { supabase } from "../../supabase";
-
+import { z } from "zod";
+import Swal from "sweetalert2";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import withReactContent from "sweetalert2-react-content";
+import Input from "../../components/Input";
+import Select from "../../components/Select";
+// import { supabase } from "../../supabase";
 const Icc = () => {
   const [nama, setNama] = useState("");
   const [kelas, setKelas] = useState("");
@@ -10,23 +16,60 @@ const Icc = () => {
 
   const navigate = useNavigate();
 
-  const savePesertaIcc = async (e) => {
-    e.preventDefault();
-    try {
-      const { error } = await supabase.from("user").insert([
-        {
-          nama: nama,
-          kelas: kelas,
-          wa: wa,
-        },
-      ]);
-      if (error) throw error;
+  const [loading, setLoading] = useState(false);
+  const validationSchema = z.object({
+    nama: z.string().min(1, { message: "Nama lengkap harus diisi" }),
 
-      navigate("/Icc/PesertaI");
-    } catch (error) {
-      console.log(error)
-    }
-  }
+    kelas: z.string().min(1, { message: "Kelas harus di isi" }),
+    whatsapp: z
+      .string()
+      .min(10, { message: "Nomor Whatsapp setidaknya harus 10 karakter" })
+      .max(13, { message: "Nomor whatsapp tidak bisa lebih dari 13" }),
+  });
+  const {
+    control,
+    formState: { isValid },
+    handleSubmit,
+  } = useForm({
+    mode: "all",
+    resolver: zodResolver(validationSchema),
+    defaultValues: {
+      nama: "",
+      kelas: "A1",
+      whatsapp: "",
+    },
+  });
+
+  const MySwal = withReactContent(Swal);
+
+  const onSubmit = handleSubmit(async (data) => {
+    //   const { nama, kelas, whatsapp } = data;
+    //   const payload = { nama, kelas };
+    //   try {
+    //     setLoading(true);
+    //     const { error } = await supabase
+    //       .from("user")
+    //       .insert({ ...payload, wa: whatsapp });
+    //     if (error) {
+    //       setLoading(false);
+    //       MySwal.fire({
+    //         title: "Telah terjadi error",
+    //         text: error.message,
+    //         icon: "error",
+    //       });
+    //     }
+    //     setLoading(false);
+    //     if (!error) {
+    //       MySwal.fire({
+    //         title: "Selamat Anda Berhasil terdaftar!",
+    //         text: "Kini anda telah terdaftar di ICC 2023",
+    //         icon: "success",
+    //       });
+    //     }
+    //   } catch (err) {
+    //     throw err;
+    //   }
+  });
 
   return (
     <div className="container mx-auto my-24">
@@ -41,48 +84,74 @@ const Icc = () => {
             <h1 className="text-center pb-2 text-2xl font-semibold">
               Registrasi
             </h1>
-            <form onSubmit={savePesertaIcc}>
-              <label htmlFor="" className="text-lg md:text-xl">
-                Nama :
-              </label>
-              <div>
-                <input
-                  value={nama}
-                  onChange={(e) => setNama(e.target.value)}
-                  type="text"
-                  className="bg-slate-200 rounded-lg p-1 mb-2"
-                  placeholder="Nama...."
-                />
-              </div>
-              <label htmlFor="" className="text-lg md:text-xl">
-                Kelas :
-              </label>
-              <div>
-                <input
-                  value={kelas}
-                  onChange={(e) => setKelas(e.target.value)}
-                  type="text"
-                  className="bg-slate-200 rounded-lg p-1 mb-2"
-                  placeholder="Kelas...."
-                />
-              </div>
-              <label htmlFor="" className="text-lg md:text-xl">
-                Whats App :
-              </label>
-              <div>
-                <input
-                  value={wa}
-                  onChange={(e) => setWhatsapp(e.target.value)}
-                  type="text"
-                  className="bg-slate-200 rounded-lg p-1"
-                  placeholder="No Phone"
-                />
-              </div>
-              <div className="flex justify-center">
-                <button className="bg-[#313ED1] p-2 text-white rounded-lg mt-6">
-                  Daftar
-                </button>
-              </div>
+            <form onSubmit={onSubmit}>
+              <Input
+                control={control}
+                type="text"
+                label="Nama"
+                required
+                name="nama"
+                placeholder="Masukan Nama Anda"
+              />
+
+              <Select
+                control={control}
+                type="text"
+                label="Kelas"
+                required
+                name="kelas"
+                options={[
+                  {
+                    value: "A1",
+                    label: "A1",
+                  },
+                  {
+                    value: "A2",
+                    label: "A2",
+                  },
+                  {
+                    value: "A3",
+                    label: "A3",
+                  },
+                  {
+                    value: "A4",
+                    label: "A4",
+                  },
+                  {
+                    value: "A5",
+                    label: "A5",
+                  },
+                  {
+                    value: "A6",
+                    label: "A6",
+                  },
+                  {
+                    value: "B1",
+                    label: "B1",
+                  },
+                  {
+                    value: "B2",
+                    label: "B2",
+                  },
+                ]}
+              />
+
+              <Input
+                control={control}
+                type="number"
+                label="No Whatsapp"
+                required
+                name="whatsapp"
+                placeholder="Masukan No Whatsapp Anda"
+              />
+
+              <button
+                id="btn"
+                className="bg-[#313ED1] p-2 text-white rounded-lg mt-6 hover:bg-[#060e63] disabled:bg-gray-200 w-full"
+                disabled={!isValid}
+              >
+                {loading ? "Sedang Memproses..." : "Daftar"}
+              </button>
             </form>
           </div>
         </div>
