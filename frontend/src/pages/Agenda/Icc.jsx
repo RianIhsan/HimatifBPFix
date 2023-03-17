@@ -8,7 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import withReactContent from "sweetalert2-react-content";
 import Input from "../../components/Input";
 import Select from "../../components/Select";
-// import { supabase } from "../../supabase";
+import { supabase } from "../../supabase";
 const Icc = () => {
   const [nama, setNama] = useState("");
   const [kelas, setKelas] = useState("");
@@ -43,32 +43,32 @@ const Icc = () => {
   const MySwal = withReactContent(Swal);
 
   const onSubmit = handleSubmit(async (data) => {
-    //   const { nama, kelas, whatsapp } = data;
-    //   const payload = { nama, kelas };
-    //   try {
-    //     setLoading(true);
-    //     const { error } = await supabase
-    //       .from("user")
-    //       .insert({ ...payload, wa: whatsapp });
-    //     if (error) {
-    //       setLoading(false);
-    //       MySwal.fire({
-    //         title: "Telah terjadi error",
-    //         text: error.message,
-    //         icon: "error",
-    //       });
-    //     }
-    //     setLoading(false);
-    //     if (!error) {
-    //       MySwal.fire({
-    //         title: "Selamat Anda Berhasil terdaftar!",
-    //         text: "Kini anda telah terdaftar di ICC 2023",
-    //         icon: "success",
-    //       });
-    //     }
-    //   } catch (err) {
-    //     throw err;
-    //   }
+    const { nama, kelas, whatsapp } = data;
+    const payload = { nama, kelas };
+    try {
+      setLoading(true);
+      const { error } = await supabase
+        .from("user")
+        .insert({ ...payload, wa: whatsapp });
+      if (error) {
+        setLoading(false);
+        MySwal.fire({
+          title: "Telah terjadi error",
+          text: error.message,
+          icon: "error",
+        });
+      }
+      setLoading(false);
+      if (!error) {
+        MySwal.fire({
+          title: "Selamat Anda Berhasil terdaftar!",
+          text: "Kini anda telah terdaftar di ICC 2023",
+          icon: "success",
+        });
+      }
+    } catch (err) {
+      throw err;
+    }
   });
 
   return (
