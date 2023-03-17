@@ -4,7 +4,10 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../index.css";
 import "../CarouselButton.css";
-import figma from "../assets/figma.png";
+import society from "../assets/society.png";
+import goAndRust from "../assets/goAndRust.png";
+import chatGPTvsGoogle from "../assets/chatGPTvsGoogle.png";
+import openAi from "../assets/openai.png";
 import resesi from "../assets/resesi.png";
 import iphone from "../assets/iphone.png";
 import AOS from "aos";
@@ -51,7 +54,7 @@ const Berita = () => {
             {/* Carousel */}
             <div>
               <div>
-                <Carousel responsive={responsive} className="mx-[5vw]">
+                <Carousel responsive={responsive} className="mx-[6vw]">
                   {/* slide 1 */}
                   <div className="w-[264px] hover:opacity-80 duration-300">
                     <Link
@@ -60,13 +63,15 @@ const Berita = () => {
                     >
                       <div className="w-auto h-[220px] rounded-t-[9px] text-center">
                         <img
-                          src={figma}
+                          src={society}
                           alt=""
-                          className="rounded-t-md h-full"
+                          className="rounded-t-md h-full object-cover"
                         />
                       </div>
                       <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
-                        <h1 className="text-[25px] lg:text-[28px]">Figma</h1>
+                        <h1 className="text-[25px] lg:text-[20px]">
+                          Apa itu Society 5.0 ?
+                        </h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
                           <span className="text-[12px] lg:text-[13px] text-red-500">
@@ -74,8 +79,8 @@ const Berita = () => {
                           </span>
                         </div>
                         <p className="text-[13px] lg:text-[14px]">
-                          Figma menjadi website desain terbaik bagi para
-                          desainer web dan mobile
+                          Society 5.0 konsep terbaru dalam kehidupan teknologi
+                          di zaman sekarang.
                         </p>
                       </div>
                     </Link>
@@ -89,14 +94,14 @@ const Berita = () => {
                     >
                       <div className="w-auto h-[220px] rounded-t-[9px] text-center">
                         <img
-                          src={resesi}
+                          src={goAndRust}
                           alt=""
                           className="rounded-t-md h-full"
                         />
                       </div>
                       <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
-                        <h1 className="text-[25px] lg:text-[28px]">
-                          Resesi 2023
+                        <h1 className="text-[25px] lg:text-[20px]">
+                          Golang and Rust
                         </h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
@@ -105,7 +110,8 @@ const Berita = () => {
                           </span>
                         </div>
                         <p className="text-[13px] lg:text-[14px]">
-                          Menginjak awal tahun 2023 dengan resesi global
+                          Dua Bahasa Pemprograman yang sedang naik daun dan
+                          dicari oleh perusahaan ternama.
                         </p>
                       </div>
                     </Link>
@@ -119,14 +125,14 @@ const Berita = () => {
                     >
                       <div className="w-auto h-[220px] rounded-t-[9px] text-center">
                         <img
-                          src={iphone}
+                          src={chatGPTvsGoogle}
                           alt=""
                           className="rounded-t-md w-full h-full"
                         />
                       </div>
                       <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
-                        <h1 className="text-[25px] lg:text-[28px]">
-                          Resesi 2023
+                        <h1 className="text-[25px] lg:text-[20px]">
+                          Google vs Bing
                         </h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
@@ -135,7 +141,8 @@ const Berita = () => {
                           </span>
                         </div>
                         <p className="text-[13px] lg:text-[14px]">
-                          Menginjak awal tahun 2023 dengan resesi global
+                          Duel AI Terbeser antara Google dan Bing yang sudah
+                          menggunaka Chat GPT, Siapa yang terbaik?
                         </p>
                       </div>
                     </Link>
@@ -149,13 +156,13 @@ const Berita = () => {
                     >
                       <div className="w-auto h-[220px] rounded-t-[9px] text-center">
                         <img
-                          src={iphone}
+                          src={openAi}
                           alt=""
                           className="rounded-t-md w-full h-full"
                         />
                       </div>
                       <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
-                        <h1 className="text-[25px] lg:text-[28px]">Open AI</h1>
+                        <h1 className="text-[25px] lg:text-[20px]">Open AI</h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
                           <span className="text-[12px] lg:text-[13px] text-red-500">
@@ -163,37 +170,8 @@ const Berita = () => {
                           </span>
                         </div>
                         <p className="text-[13px] lg:text-[14px]">
-                          Open Ai menjadi suatu hal yang melejit belakangan ini
-                        </p>
-                      </div>
-                    </Link>
-                  </div>
-
-                  {/* slide 5 */}
-                  <div className="w-[264px] hover:opacity-80 duration-300">
-                    <Link
-                      to=""
-                      className="flex flex-col w-[261px] lg:w-[281px] h-[378px] lg:h-[412px] font-semibold bg-white rounded-[11px]"
-                    >
-                      <div className="w-auto h-[220px] rounded-t-[9px] text-center">
-                        <img
-                          src={iphone}
-                          alt=""
-                          className="rounded-t-md w-full h-full"
-                        />
-                      </div>
-                      <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
-                        <h1 className="text-[25px] lg:text-[28px]">
-                          Berita Terkini
-                        </h1>
-                        <div className="flex items-center gap-2 animate-pulse">
-                          <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
-                          <span className="text-[12px] lg:text-[13px] text-red-500">
-                            21 hari yang lalu
-                          </span>
-                        </div>
-                        <p className="text-[13px] lg:text-[14px]">
-                          Berita yang sedang hangat dimanapun itu berada
+                          Open Ai Merupakan sebuah perusahaan AI yang sedang
+                          menjadi buah bibir di dunia maya saat ini.
                         </p>
                       </div>
                     </Link>
@@ -210,7 +188,7 @@ const Berita = () => {
       <div className="md:hidden max-[200px]:hidden">
         <div className="flex justify-center">
           <div
-            className="flex border-2 border-[#020181] w-[252px] sm:w-[385px] h-[1050px] sm:h-[1355px] my-[60px] bg-[#020181] rounded-[12px] flex-col"
+            className="flex border-2 border-[#020181] w-[302px] sm:w-[385px] h-[1100px] sm:h-[1375px] my-[60px] bg-[#020181] rounded-[12px] flex-col overflow-auto"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-once="true"
@@ -218,7 +196,8 @@ const Berita = () => {
             <h2 className="text-[24px] sm:text-[30px] text-white m-[20px] pl-[6px] sm:pl-[22px] font-[400px]">
               News
             </h2>
-            <div className="pl-[20px] sm:pl-[66px] pt-[10px]">
+
+            <div className="pl-[46px] sm:pl-[66px] pt-[10px]">
               {/* Slide 1 */}
               <div className="w-[212px] sm:w-[263px] hover:opacity-80 duration-300">
                 <Link
@@ -227,13 +206,15 @@ const Berita = () => {
                 >
                   <div className="w-auto h-[200px] rounded-t-[0.64rem] text-center">
                     <img
-                      src={figma}
+                      src={society}
                       alt=""
-                      className="rounded-t-[0.58rem] h-full group-hover:opacity-90"
+                      className="rounded-t-[0.58rem] h-full group-hover:opacity-90 object-cover"
                     />
                   </div>
                   <div className="flex flex-col justify-evenly ml-[20px] h-[126px] w-[200px]">
-                    <h1 className="text-[16px] sm:text-[25px]">Figma</h1>
+                    <h1 className="text-[16px] sm:text-[25px]">
+                      Apa itu Society 5.0 ?
+                    </h1>
                     <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
                       <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
                       <span className="text-[9px] sm:text-[12px] text-red-500">
@@ -241,8 +222,8 @@ const Berita = () => {
                       </span>
                     </div>
                     <p className="text-[10px] sm:text-[13px] w-[180px]">
-                      Figma menjadi website desain terbaik bagi para desainer
-                      web dan mobile
+                      Society 5.0 konsep terbaru dalam kehidupan teknologi di
+                      zaman sekarang.
                     </p>
                   </div>
                 </Link>
@@ -257,13 +238,15 @@ const Berita = () => {
                 >
                   <div className="w-auto h-[200px] rounded-t-[0.64rem] text-center">
                     <img
-                      src={resesi}
+                      src={goAndRust}
                       alt=""
                       className="rounded-t-[0.58rem] h-full group-hover:opacity-90"
                     />
                   </div>
                   <div className="flex flex-col justify-evenly ml-[20px] h-[126px] w-[200px]">
-                    <h1 className="text-[16px] sm:text-[25px]">Resesi 2023</h1>
+                    <h1 className="text-[16px] sm:text-[25px]">
+                      Golang and Rust
+                    </h1>
                     <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
                       <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
                       <span className="text-[9px] sm:text-[12px] text-red-500">
@@ -271,7 +254,8 @@ const Berita = () => {
                       </span>
                     </div>
                     <p className="text-[10px] sm:text-[13px] w-[180px]">
-                      Menginjak awal tahun 2023 dengan resesi global
+                      Dua Bahasa Pemprograman yang sedang naik daun dan dicari
+                      oleh perusahaan ternama.
                     </p>
                   </div>
                 </Link>
@@ -285,14 +269,14 @@ const Berita = () => {
                 >
                   <div className="w-auto h-[268px] rounded-t-[0.64rem] text-center">
                     <img
-                      src={iphone}
+                      src={chatGPTvsGoogle}
                       alt=""
                       className="rounded-t-[0.58rem] h-full group-hover:opacity-90"
                     />
                   </div>
                   <div className="flex flex-col justify-evenly ml-[20px] h-[156px] w-[200px]">
                     <h1 className="text-[16px] sm:text-[18px] w-[150px]">
-                      Apple buka pabrik di China
+                      Google vs Bing
                     </h1>
                     <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
                       <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
@@ -301,7 +285,39 @@ const Berita = () => {
                       </span>
                     </div>
                     <p className="text-[10px] sm:text-[13px] w-[180px]">
-                      Strategi Apple buka pabrik di China menjadi sorotan
+                      Duel AI Terbeser antara Google dan Bing yang sudah
+                      menggunaka Chat GPT, Siapa yang terbaik?
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
+              {/* Slide 4 */}
+              <div className="w-[212px] sm:w-[263px] mt-[30px] hover:opacity-80 duration-300">
+                <Link
+                  to="../Duel"
+                  className="flex flex-col w-[210px] h-[332px] sm:w-[261px] sm:h-[429px] font-semibold bg-white rounded-[0.64rem]"
+                >
+                  <div className="w-auto h-[268px] rounded-t-[0.64rem] text-center">
+                    <img
+                      src={openAi}
+                      alt=""
+                      className="rounded-t-[0.58rem] h-full group-hover:opacity-90"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-evenly ml-[20px] h-[156px] w-[200px]">
+                    <h1 className="text-[16px] sm:text-[18px] w-[150px]">
+                      Open AI
+                    </h1>
+                    <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
+                      <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
+                      <span className="text-[9px] sm:text-[12px] text-red-500">
+                        14 hari yang lalu
+                      </span>
+                    </div>
+                    <p className="text-[10px] sm:text-[13px] w-[180px]">
+                      Open Ai Merupakan sebuah perusahaan AI yang sedang menjadi
+                      buah bibir di dunia maya saat ini.
                     </p>
                   </div>
                 </Link>

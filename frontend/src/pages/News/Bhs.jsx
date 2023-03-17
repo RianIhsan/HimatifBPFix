@@ -1,5 +1,7 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import goAndRust from "../../assets/goAndRust.png";
+
 const Bhs = () => {
   return (
     <div>
@@ -12,7 +14,7 @@ const Bhs = () => {
         </div>
         <p className="py-6">6 February 2023 | 2023</p>
         <div className="flex justify-center items-center pb-6">
-          <img src="https://source.unsplash.com/790x217?figma" alt="" />
+          <img src={goAndRust} alt="" />
         </div>
         <div>
           <p className="text-2xl">
