@@ -11,7 +11,7 @@ const Event = () => {
     AOS.init();
   }, []);
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto ml-11">
       <div className="bg-[#FAFEFF] duration-300">
         <div className="h-[130px] flex items-center">
           <div
