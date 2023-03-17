@@ -1,4 +1,6 @@
 import Achievement1 from "../assets/achievement1.jpeg";
+import Achievement2 from "../assets/sukmaraka.jpg";
+import Achievement3 from "../assets/achievemen_icc.jpg";
 import React, { useState } from "react";
 
 const Achievments = () => {
@@ -10,12 +12,12 @@ const Achievments = () => {
     },
     {
       id: 2,
-      src: "https://source.unsplash.com/500x500?programming",
+      src: Achievement2,
       caption: "ini adalah caption",
     },
     {
       id: 3,
-      src: "https://source.unsplash.com/500x500?cars",
+      src: Achievement3,
       caption: "ini adalah caption",
     },
   ]);
