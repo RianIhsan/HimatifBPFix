@@ -8,8 +8,6 @@ import society from "../assets/society.png";
 import goAndRust from "../assets/goAndRust.png";
 import chatGPTvsGoogle from "../assets/chatGPTvsGoogle.png";
 import openAi from "../assets/openai.png";
-import resesi from "../assets/resesi.png";
-import iphone from "../assets/iphone.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -69,13 +67,13 @@ const Berita = () => {
                         />
                       </div>
                       <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
-                        <h1 className="text-[25px] lg:text-[20px]">
+                        <h1 className="text-[20px] lg:text-[21px]">
                           Apa itu Society 5.0 ?
                         </h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
                           <span className="text-[12px] lg:text-[13px] text-red-500">
-                            5 hari yang lalu
+                            7 hari yang lalu
                           </span>
                         </div>
                         <p className="text-[13px] lg:text-[14px]">
@@ -100,7 +98,7 @@ const Berita = () => {
                         />
                       </div>
                       <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
-                        <h1 className="text-[25px] lg:text-[20px]">
+                        <h1 className="text-[20px] lg:text-[22px]">
                           Golang and Rust
                         </h1>
                         <div className="flex items-center gap-2 animate-pulse">
@@ -131,13 +129,13 @@ const Berita = () => {
                         />
                       </div>
                       <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
-                        <h1 className="text-[25px] lg:text-[20px]">
+                        <h1 className="text-[20px] lg:text-[22px]">
                           Google vs Bing
                         </h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
                           <span className="text-[12px] lg:text-[13px] text-red-500">
-                            10 hari yang lalu
+                            7 hari yang lalu
                           </span>
                         </div>
                         <p className="text-[13px] lg:text-[14px]">
@@ -162,11 +160,11 @@ const Berita = () => {
                         />
                       </div>
                       <div className="flex flex-col justify-evenly ml-[20px] mt-[2px] lg:mt-[8px] h-[126px] lg:h-[156px] w-[200px] ">
-                        <h1 className="text-[25px] lg:text-[20px]">Open AI</h1>
+                        <h1 className="text-[20px] lg:text-[22px]">Open AI</h1>
                         <div className="flex items-center gap-2 animate-pulse">
                           <div className="bg-red-500 w-[10px] rounded-full h-[10px]"></div>
                           <span className="text-[12px] lg:text-[13px] text-red-500">
-                            14 hari yang lalu
+                            7 hari yang lalu
                           </span>
                         </div>
                         <p className="text-[13px] lg:text-[14px]">
@@ -202,7 +200,7 @@ const Berita = () => {
               <div className="w-[212px] sm:w-[263px] hover:opacity-80 duration-300">
                 <Link
                   to="../Society"
-                  className="flex flex-col w-[210px] h-[270px] sm:w-[261px] sm:h-[358px] font-semibold bg-white rounded-[0.64rem]"
+                  className="flex flex-col w-[210px] h-[285px] sm:w-[261px] sm:h-[358px] font-semibold bg-white rounded-[0.64rem]"
                 >
                   <div className="w-auto h-[200px] rounded-t-[0.64rem] text-center">
                     <img
@@ -211,14 +209,14 @@ const Berita = () => {
                       className="rounded-t-[0.58rem] h-full group-hover:opacity-90 object-cover"
                     />
                   </div>
-                  <div className="flex flex-col justify-evenly ml-[20px] h-[126px] w-[200px]">
+                  <div className="flex flex-col justify-evenly ml-[20px] h-[126px] w-[200px] sm:mt-3">
                     <h1 className="text-[16px] sm:text-[25px]">
                       Apa itu Society 5.0 ?
                     </h1>
                     <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
                       <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
                       <span className="text-[9px] sm:text-[12px] text-red-500">
-                        5 hari yang lalu
+                        7 hari yang lalu
                       </span>
                     </div>
                     <p className="text-[10px] sm:text-[13px] w-[180px]">
@@ -234,7 +232,7 @@ const Berita = () => {
               <div className="w-[212px] sm:w-[263px] mt-[30px] hover:opacity-80 duration-300">
                 <Link
                   to="../Bhs"
-                  className="flex flex-col w-[210px] h-[270px] sm:w-[261px] sm:h-[358px] font-semibold bg-white rounded-[0.64rem]"
+                  className="flex flex-col w-[210px] h-[290px] sm:w-[261px] sm:h-[358px] font-semibold bg-white rounded-[0.64rem]"
                 >
                   <div className="w-auto h-[200px] rounded-t-[0.64rem] text-center">
                     <img
@@ -281,7 +279,7 @@ const Berita = () => {
                     <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
                       <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
                       <span className="text-[9px] sm:text-[12px] text-red-500">
-                        14 hari yang lalu
+                        7 hari yang lalu
                       </span>
                     </div>
                     <p className="text-[10px] sm:text-[13px] w-[180px]">
@@ -295,7 +293,7 @@ const Berita = () => {
               {/* Slide 4 */}
               <div className="w-[212px] sm:w-[263px] mt-[30px] hover:opacity-80 duration-300">
                 <Link
-                  to="../Duel"
+                  to="../OpenAi"
                   className="flex flex-col w-[210px] h-[332px] sm:w-[261px] sm:h-[429px] font-semibold bg-white rounded-[0.64rem]"
                 >
                   <div className="w-auto h-[268px] rounded-t-[0.64rem] text-center">
@@ -312,7 +310,7 @@ const Berita = () => {
                     <div className="flex items-center gap-1 sm:gap-2 animate-pulse">
                       <div className="bg-red-500 w-[7px] sm:w-[10px] rounded-full h-[7px] sm:h-[10px]"></div>
                       <span className="text-[9px] sm:text-[12px] text-red-500">
-                        14 hari yang lalu
+                        7 hari yang lalu
                       </span>
                     </div>
                     <p className="text-[10px] sm:text-[13px] w-[180px]">
