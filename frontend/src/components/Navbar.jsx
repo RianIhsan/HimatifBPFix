@@ -128,12 +128,6 @@ export default function Navbar() {
                       >
                         ICC
                       </Link>
-                      <Link
-                        to="../Makrab"
-                        className="px-2 py-1 hover:bg-[#020181] hover:rounded-lg hover:text-white"
-                      >
-                        MAKRAB
-                      </Link>
                     </div>
                   </div>
                 </Link>
