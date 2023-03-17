@@ -16,19 +16,21 @@ const Bhs = () => {
         </div>
         <div>
           <p className="text-2xl">
-            Golang <br /> <br />
+            <p>Golang</p>
             Golang merupakan bahasa pemrograman yang dibuat oleh Google tahun
             2009. Merupakan bahasa pemrograman yang open source, mudah,
             sederhana, efisien. Bahasa ini memiliki level yang sama dengan Java.
             Bahasa Golang digunakan untuk pengembangan perangkat lunak karena
             memiliki nilai lebih di sisi keamanan dan skalabilitas. Bahasa ini
-            juga bisa digunakan untuk membuat situs e-commerce. <br /> <br />{" "}
+            juga bisa digunakan untuk membuat situs e-commerce.
+          </p>
+          <p>
             Dalam posisi back end, fungsi concurrency dan footprint yang
             memiliki kapasitas memori yang kecil, dapat digunakan untuk
             meningkatkan jumlah aktivitas pengguna aplikasi.
           </p>
           <p className="text-2xl">
-            Rust <br /> <br />
+            <p>Rust</p>
             Rust merupakan bahasa pemrograman multi-paradigma yang dikembangkan
             oleh Mozilla. Rust dikembangkan untuk kinerja dan keamanan terutama
             konkurensi yang aman. Bahasa pemrograman ini memiliki sintaksis yang

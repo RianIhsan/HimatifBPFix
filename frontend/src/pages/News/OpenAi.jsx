@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import openai from "../../assets/openai.png";
 const OpenAi = () => {
   return (
     <div>
@@ -10,7 +11,7 @@ const OpenAi = () => {
         </div>
         <p className="py-6">6 February 2023 | 2023</p>
         <div className="flex justify-center items-center pb-6">
-          <img src="https://source.unsplash.com/790x217?figma" alt="" />
+          <img src={openai} alt="" />
         </div>
         <div>
           <p className="text-2xl">
@@ -20,9 +21,12 @@ const OpenAi = () => {
             kehadiran kecerdasan buatan. Perusahaan ini memiliki beberapa
             produk. Namun, yang saat ini tengah banyak diperbincangkan adalah
             chatGPT mereka yang mampu memberikan jawaban atas beragam pertanyaan
-            dengan sangat cepat dan tepat. <br /> <br /> Beberapa produk milik
-            openAI antara lain, Dall-E (mampu membuat gambar dari deskripsi
-            teks), GPT-3, openAI Five, chatGPT, openAI codex.
+            dengan sangat cepat dan tepat.
+          </p>
+          <p>
+            Beberapa produk milik openAI antara lain, Dall-E (mampu membuat
+            gambar dari deskripsi teks), GPT-3, openAI Five, chatGPT, openAI
+            codex.
           </p>
         </div>
       </div>
