@@ -32,14 +32,14 @@ const Footer = () => {
             <a
               href="https://goo.gl/maps/dzhFcgdFmx8Vmqnb7"
               target="_blank"
-              className="underline"
+              className="underline hover:font-bold ease-in-out duration-150"
             >
               View Map
             </a>
           </div>
 
           <div className="flex w-[140px] md:w-[170px] mt-[25px] md:mt-[55px] justify-center items-center gap-6">
-            <div>
+            <div className="hover:scale-125 ease-out duration-300">
               <a
                 href="mailto:teknikinformatikauninus@gmail.com?subjek=Subjek Email&body=Isi Pesan"
                 target="_blank"
@@ -88,7 +88,7 @@ const Footer = () => {
               </a>
             </div>
 
-            <div>
+            <div className="hover:scale-125 ease-out duration-300">
               <a
                 href="https://www.instagram.com/himatifuninus/"
                 target="_blank"
