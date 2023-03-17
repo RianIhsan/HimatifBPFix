@@ -44,7 +44,7 @@ function AccordionList({
       </div>
       {isOpen && (
         <div className="pl-5 pb-3 pr-3">
-          <ul className="text-justify">
+          <ul className="text-justify pr-5">
             <li>{content1}</li>
             <li>{content2}</li>
             <li>{content3}</li>
