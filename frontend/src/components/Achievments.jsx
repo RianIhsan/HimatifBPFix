@@ -13,12 +13,12 @@ const Achievments = () => {
     {
       id: 2,
       src: Achievement2,
-      caption: "ini adalah caption",
+      caption: "Medali Perunggu Cabor Judo",
     },
     {
       id: 3,
       src: Achievement3,
-      caption: "ini adalah caption",
+      caption: "Juara 1 & 2 ICC",
     },
   ]);
   const [selectedImage, setSelectedImage] = useState(null);
