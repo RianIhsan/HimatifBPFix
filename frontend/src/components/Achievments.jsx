@@ -30,9 +30,9 @@ const Achievments = () => {
   };
 
   return (
-    <div className="container mx-auto w-[90vw]">
+    <div className="container mx-auto px-[59px]">
       <div
-        className="bg-[#020181] w-[130px] ml-1 h-[50px] mb-10 rounded-md flex justify-center items-center max-[500px]:w-[100px] sm:ml-[-13px] md:ml-[-13px] lg:ml-[3.4rem]"
+        className="bg-[#020181] w-[130px] h-[50px] mb-10 rounded-md flex justify-center items-center max-[500px]:w-[100px] ml-[-39px] sm:ml-[-13px] md:ml-[-13px] lg:ml-0.5 xl:ml-7 "
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-once="true"
