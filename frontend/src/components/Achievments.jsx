@@ -1,13 +1,12 @@
-import trophy from "../assets/1.png";
-import tape from "../assets/3.png";
+import Achievement1 from "../assets/achievement1.jpeg";
 import React, { useState } from "react";
 
 const Achievments = () => {
   const [images, setImages] = useState([
     {
       id: 1,
-      src: "https://source.unsplash.com/500x500?male",
-      caption: "ini adalah caption",
+      src: Achievement1,
+      caption: "Juara III Pagar Nusa UNINUS",
     },
     {
       id: 2,
@@ -59,7 +58,7 @@ const Achievments = () => {
               data-aos-easing="ease-in"
               data-aos-once="true"
             />
-            <p className="z-100 absolute bg-black bg-opacity-25 text-[10px] sm:text-[14px] md:text-[16px] text-white p-2 mb-2 rounded-lg">
+            <p className="z-100 absolute bg-black bg-opacity-80 text-[10px] sm:text-[14px] md:text-[16px] text-white p-2 mb-2 rounded-lg">
               {image.caption}
             </p>
           </div>
